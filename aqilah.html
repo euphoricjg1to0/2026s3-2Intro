@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aqilah | Re-Ignite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+
+      /* Animated gradient background */
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ffb347);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradien tBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #ffe066;
+      font-weight: bold;
+    }
+
+    /* Floating effect */
+    .container {
+      animation: float 4s ease-in-out infinite, fadeIn 2s ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hi, I'm Aqilah 👋</h1>
+    <h2>Sec 3 Student | Aspiring Web Developer</h2>
+
+    <p>
+      I am currently studying <span class="highlight">Mobile Web Application</span>.
+      I enjoy creating simple and creative webpages using HTML and CSS.
+    </p>
+
+    <br>
+
+    <p>
+      🌟 My Ignite Challenge: <span class="highlight">"Re-Ignite"</span><br>
+      Bringing ideas back to life through design, creativity, and code.
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Aqilah | Built with HTML & CSS
+  </footer>
+
+</body>
+</html>
