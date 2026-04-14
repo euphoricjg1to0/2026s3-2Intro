@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ke Yu | Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #00c6ff, #0072ff, #00ff88, #00c6ff);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      overflow: hidden;
+      color: white;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      text-align: center;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: slideDown 1.2s ease;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .highlight {
+      color: #ffe066;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: white;
+      color: #0072ff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #eee;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* floating shapes */
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      animation: floatUp 12s linear infinite;
+    }
+
+    .shape:nth-child(1) {
+      width: 50px;
+      height: 50px;
+      left: 15%;
+      animation-duration: 10s;
+    }
+
+    .shape:nth-child(2) {
+      width: 80px;
+      height: 80px;
+      left: 75%;
+      animation-duration: 14s;
+    }
+
+    .shape:nth-child(3) {
+      width: 30px;
+      height: 30px;
+      left: 50%;
+      animation-duration: 9s;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-120vh); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- floating shapes -->
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+
+  <div class="card">
+    <h1>👋 Hi, I'm Ke Yu</h1>
+    <p>
+      I'm a <span class="highlight">Secondary 3 student</span> currently studying 
+      <span class="highlight">Mobile Web Applications</span>.
+    </p>
+    <p>
+      I create simple webpages using <span class="highlight">HTML & CSS</span> 💻
+    </p>
+    <p>
+      My Ignite Challenge is <span class="highlight">Wild Wild Water</span> 🌊
+    </p>
+    <a href="#" class="btn">Explore More</a>
+  </div>
+
+</body>
+</html>
