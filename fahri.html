@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahri | Landing Page</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        animation: slideDown 1.5s ease;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        animation: fadeIn 3s ease;
+    }
+
+    p {
+        max-width: 500px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        animation: fadeIn 4s ease;
+    }
+
+    button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #ffcc00;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        background: #ffd633;
+    }
+
+    /* Floating circles animation */
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        animation: float 10s infinite;
+    }
+
+    .circle:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        left: 10%;
+        top: 80%;
+    }
+
+    .circle:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        left: 70%;
+        top: 60%;
+        animation-duration: 12s;
+    }
+
+    .circle:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        left: 40%;
+        top: 90%;
+        animation-duration: 8s;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-200px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Background animation -->
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+    <h1>Hello, I'm Fahri 👋</h1>
+    <h2>Secondary 3 Student</h2>
+
+    <p>
+        I am currently studying Mobile Web Application and learning how to build
+        simple and creative websites using HTML and CSS.
+        My Ignite Challenge is <strong>"Logistic Supply Chain Warrior"</strong>.
+    </p>
+
+    <button onclick="alert('Welcome to my project! 🚀')">
+        Explore My Journey
+    </button>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
