@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arif's Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    .challenge {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffcc00;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff;
+      }
+      to {
+        text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, I'm Arif</h1>
+    <p>Sec 3 student currently studying <br> Mobile Web Application</p>
+    <div class="challenge">Ignite Challenge: Supply Chain Warriors (Logistics Challenge)</div>
+  </div>
+</body>
+</html>
