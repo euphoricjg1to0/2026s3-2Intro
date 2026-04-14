@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #4facfe, #00f2fe);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: white;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: slideDown 1.5s ease;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+      animation: slideUp 1.5s ease;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+      opacity: 0;
+      animation: fadeIn 2s ease 1s forwards;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: white;
+      color: #333;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      animation: fadeIn 2s ease 1.5s forwards;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, I'm Brandon 👋</h1>
+    <h2>Sec 3 Student | Mobile Web App Learner</h2>
+    <p>
+      I am currently studying Mobile Web Application and enjoy creating simple
+      webpages using HTML and CSS. My Ignite Challenge project is
+      <strong>"XSpeed Coding with Micro:bit"</strong>.
+    </p>
+    <button class="btn">View My Work</button>
+  </div>
+</body>
+</html>
