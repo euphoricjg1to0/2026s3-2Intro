@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shazmeen | Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(270deg, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: slideDown 1.5s ease;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+      opacity: 0.9;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      max-width: 500px;
+      margin: auto;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: white;
+      color: #2575fc;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #f1f1f1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* floating circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .circle:nth-child(1) {
+      width: 80px;
+      height: 80px;
+      top: 10%;
+      left: 20%;
+    }
+
+    .circle:nth-child(2) {
+      width: 120px;
+      height: 120px;
+      bottom: 15%;
+      right: 20%;
+      animation-duration: 12s;
+    }
+
+    .circle:nth-child(3) {
+      width: 60px;
+      height: 60px;
+      bottom: 30%;
+      left: 10%;
+      animation-duration: 8s;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background animation circles -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <div class="container">
+    <h1>Hi, I'm Shazmeen 👋</h1>
+    <h2>Student & Beginner Web Developer</h2>
+
+    <p>
+      I am a Secondary 3 student currently studying Mobile Web Application.
+      I create simple webpages using HTML and CSS.
+      My Ignite Challenge project is <strong>Trash to Trend</strong>.
+    </p>
+
+    <button class="btn" onclick="showMessage()">Click Me</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Welcome to my webpage! 🚀");
+    }
+  </script>
+
+</body>
+</html>
